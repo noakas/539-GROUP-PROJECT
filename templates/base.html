@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{ title }}</title>
+  <meta charset = "UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="static/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="static/noaStyle.css"/>
+</head>
+
+<body id="top">
+
+  <header>
+  <a href="/index"><h1 id="title">noa<br/>kasman</h1></a>
+  <span class="logo"><a href="/index"><img src ="static/nk-image-3.jpg" alt = "Noa Kasman Logo"/></a></span>
+  <nav class ="navigation">
+    <ul>
+      <li class = "primary"><a href="/about"
+        {% if name == "About" %}
+              class = "active"
+              {% endif %}
+          >about</a></li>
+      <li class = "primary"><a href="/resume"
+        {% if name == "Resume" %}
+              class = "active"
+              {% endif %}
+          >resume</a></li>
+      <li class = "primary"><a href="/currentprojects"
+        {% if name == "Current Projects" %}
+              class = "active"
+              {% endif %}
+          >projects</a>
+        <ul>
+          <li><a href="/project1" class="/project1"
+            {% if name == "Project 1" %}
+                  class = "active"
+                  {% endif %}
+              >digitization - family</a></li>
+          <li><a href="/project2" class="/project2"
+            {% if name == "Project 2" %}
+                  class = "active"
+                  {% endif %}
+              >digitization - books</a></li>
+        </ul>
+      </li>
+      <li class = "primary"><a href="/sketchbook"
+        {% if name == "Sketchbook" %}
+              class = "active"
+              {% endif %}
+          >sketchbook</a></li>
+      <li class = "primary"><a href="/contact"
+        {% if name == "Contact" %}
+              class = "active"
+              {% endif %}
+          >contact</a></li>
+      <ul>
+        <div class ="social">
+          <li class = "primary"><a href="https://facebook.com/noa.kasman/" target="_blank" alt ="Facebook Icon"><i class="fa fa-facebook-official"></i></a></li>
+          <li class = "primary"><a href="https://instagram.com/noakasman/" target="_blank" alt ="Instagram Icon"><i class="fa fa-instagram"></i></a></li>
+          <li class = "primary"><a href="https://www.linkedin.com/pub/noa-kasman/14/755/7b6" target="_blank" alt ="LinkedIn Icon"><i class="fa fa-linkedin"></i></a></li>
+          <li class = "primary"><a href="mailto:noakasman@gmail.com?subject=Inquiry" alt ="Email Icon"><i class="fa fa-envelope"></i></a></li>
+        </div>
+      </ul>
+    </ul>
+  </nav>
+  </header>
+    {% block content %}
+    thisshouldn'tshow
+    {% endblock %}
+  <footer>
+  <div class="footerdirectory">
+    <a href= "/about">about|</a>
+    <a href="/resume">resume|</a>
+    <a href="/currentprojects">current projects|</a>
+    <a href="/sketchbook">sketchbook|</a>
+  </div>
+    <p>Copyright <i class="fa fa-copyright"></i> Noa Kasman 2015</p>
+    <a href="https://facebook.com/noa.kasman/" target="_blank" class = "footerstyle"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://instagram.com/noakasman/" target="_blank" class = "footerstyle"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/pub/noa-kasman/14/755/7b6" target="_blank" class = "footerstyle"><i class="fa fa-linkedin"></i></a>
+    <a href="mailto:noakasman@gmail.com?subject=Inquiry" class = "footerstyle"><i class="fa fa-envelope"></i></a>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+</body>
+</html>
