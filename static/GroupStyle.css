@@ -66,40 +66,23 @@ body {
   background-color: none;
 }
 
-section.introsection, #introbody {
-  display: block;
-  background-image: none;
-  background-color: #fff;
-  margin-top: 0;
-  color: black;;
-}
-
-footer.introfooter a, footer.introfooter p {
-  color: black;
-}
-
-
 h1, nav.navigation{
   margin: 4%;
 }
 
-#center h1, h2, h3, h4, h5, h6, section p, section li{
-  margin-left: 4%;
+#center-gallery h1, h2, h3, h4, h5, h6, section p, section li{
   width: 100%;
 }
 
-#center-specific h1, h2, h3, h4, h5, h6, section p, section li{
-  text-align: left;
+#center-section h1, h2, h3, h4, h5, h6, section p, section li{
   margin-left: 4%;
-  margin-right: 4% !important;
   width: 92%;
 }
-
 
 h1 {
   font-size: 300%;
   position: relative;
-  color: rgb(76, 0, 49);;
+  color: rgb(0, 0, 0);;
   cursor: auto;
 }
 
@@ -112,9 +95,7 @@ span.logo img{
   right: 1%;
   top: 0px;
   margin-top: 22px;
-  margin-bottom: 20%;
-  padding: 1%;
-  border-radius: 30%;
+  padding-top: 2%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -160,7 +141,7 @@ h5 {
 /* nav stlying */
 nav a{
   display: block;
-  font-size: 1.5rem;
+  font-size: 1rem;
 	color: rgb(76, 0, 49);;
   border-right: 6px solid rgb(83, 1, 125);;
 	border-bottom: 6px solid rgb(61, 1, 52);;
@@ -186,16 +167,12 @@ nav li.primary a:hover {
 }
 
 
-li a.active, li a.project1 a.active, a.project2 a.active{
+li a.active {
   background-image: url("../static/nkbackground.jpg");
   background-repeat: repeat;
   color: rgb(255, 186, 255) !important;;
 }
 
-li a.project1, a.project2, a.plink {
-  color: rgb(93, 73, 87);;
-  cursor: auto;
-}
 
 /* Sub Menus */
 nav li ul {
@@ -266,8 +243,6 @@ div.project1-images {
   margin-top: 2%;
   margin-bottom: 2%;
   clear: both;
-  border: 6px solid rgb(93, 73, 87);;
-	border-radius: 5px;
   text-align: center;
 }
 
@@ -291,7 +266,7 @@ section {
   height: 100%;
 }
 
-a.resumelink, p.top a, a.project1link, a.project2link, a.footerstyle {
+p.top a, a.footerstyle {
   display: none;
 }
 
@@ -337,7 +312,15 @@ h1 {
   color: black;;
 }
 
-#center-specific h1, h2, h3, h4, h5, h6, section p, section li{
+span.logo img{
+  padding-right: 3%;
+}
+
+#center-section img {
+  padding-top: 2.4%;
+}
+
+#center-section h1, h2, h3, h4, h5, h6, section p, section li{
   margin-left: 4%;
   width: 92%;
 }
@@ -378,7 +361,7 @@ li.primary ul {
   width: 18.25%;
 }
 
-li a.active, li a.project1 a.active, a.project2 a.active {
+li a.active {
   background-image: url("../static/nkbackground2.jpg") ;
   background-repeat: repeat;
   color: #fff !important;;
@@ -426,12 +409,12 @@ div.project1-images img:hover {
   margin-right: auto;
 }
 
-#center-specific {
+#center-section {
   overflow: auto;
   margin: 0;
 }
 
-#center-specific img {
+#center-section img {
   float: left;
   margin: 4%;
 }
@@ -450,7 +433,7 @@ div.about-style{
   display: inline;
 }
 
-a.resumelink, p.top a, a.project1link, a.project2link, a.footerstyle {
+a.resumelink, p.top a, a.footerstyle {
   display: inline;
   color: black;;
 }
@@ -466,7 +449,7 @@ div.footerdirectory a, footer p{
   color: black;
 }
 
-a.resumelink:hover, p.top a:hover, a.project1link:hover, a.project2link:hover, a.footerstyle:hover, a.plink{
+a.resumelink:hover, p.top a:hover, a.footerstyle:hover, a.plink{
   color: rgb(76, 0, 49);;
 }
 
@@ -487,11 +470,6 @@ section {
   background-color: rgba(225, 146, 255, 0.5);
 }
 
-span.logo img{
-  display: block;
-  left: 50%;
-  right: 50%;
-}
 
 ul.social li a {
   display: none;
@@ -517,7 +495,7 @@ nav li.primary a{
 
 }
 
-li a.active, li a.project1 a.active, a.project2 a.active{
+li a.active{
   background-image: url("../static/nkbackground.jpg");
   background-repeat: repeat;
   color: rgb(255, 186, 255) !important;
