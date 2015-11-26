@@ -9,43 +9,37 @@ def home():
 def about():
     return render_template("about.html", name = "About", title = "About")
 
-@app.route('/contact')
-def contact():
-    return render_template("contact.html", name = "Contact", title = "Contact")
+@app.route('/audio')
+def audio():
+    return render_template("audio.html", name = "Audio Formats", title = "Audio Formats")
 
-@app.route('/currentprojects')
-def currentprojects():
-    return render_template("currentprojects.html", name = "Current Projects", title = "Current Projects")
+@app.route('/video')
+def video():
+    return render_template("video.html", name = "Video Formats", title = "Video Formats")
 
-@app.route('/index')
-def index():
-    return render_template("index.html", name = "Index", title = "Index")
+@app.route('/data')
+def data():
+    return render_template("data.html", name = "Data Formats", title = "Data Formats")
 
-@app.route('/project1')
-def project1():
-    return render_template("project1.html", name = "Project 1", title = "Project 1")
+@app.route('/film')
+def film():
+    return render_template("film.html", name = "Film Formats", title = "Film Formats")
 
-@app.route('/project2')
-def project2():
-    return render_template("project2.html", name = "Project 2", title = "Project 2")
+@app.route('/galleries')
+def galleries():
+    return render_template("galleries.html", name = "Galleries", title = "Galleries")
 
-@app.route('/resume')
-def resume():
-    return render_template("resume.html", name = "Resume", title = "Resume")
+@app.route('/news')
+def news():
+    return render_template("news.html", name = "News", title = "News")
 
-@app.route('/sketchbook')
-def sketchbook():
-    return render_template("sketchbook.html", name = "Sketchbook", title = "Sketchbook")
-
-#http://flask.pocoo.org/docs/0.10/patterns/errorpages/
 @app.errorhandler(404)
 def page_not_found(e):
     return redirect("/")
-    #return render_template("404.html"), 404
 
-#@app.errorhandler(500)
-#def page_not_found(e):
-    #return render_template("500.html"), 500
+@app.errorhandler(500)
+def page_not_found(e):
+    return render_template("500.html"), 500
 
 if __name__ == '__main__':	#Start the Development server
     app.run(debug=True)
