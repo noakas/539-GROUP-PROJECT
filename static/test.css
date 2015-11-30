@@ -1,0 +1,50 @@
+.frame{
+    height: 300px;     
+    width: 300px;
+    border: 1px solid;
+    background-image: url("frame.png");
+    background-size: cover;
+    margin: 10px;
+}
+
+.tableau {
+    height: 225px;     
+    width: 225px;
+	background-color: #D9D7DA;
+    white-space: nowrap;
+    text-align: center; 
+    margin: 0 auto;
+    margin-top: 37px
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.specimen {
+    vertical-align: middle;
+}
+
+.plaque {
+	width: 180px;
+	height: 70px;
+	display: block;
+	margin: 0 auto;
+	background-image: url("plaque1.png");
+	background-size: cover;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.plaque p {
+	text-align: center;
+	font-family: "Helvetica", Times, serif;
+	font-size: 30px;
+}
+
+.exhibit {
+	width: 325px;
+	display: inline-block;
+}
