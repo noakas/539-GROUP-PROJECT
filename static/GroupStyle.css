@@ -194,7 +194,6 @@ img {
   margin-right: auto;
 }
 
-
 .frame{
     height: 300px;
     width: 300px;
@@ -224,6 +223,7 @@ img {
 }
 
 .plaque {
+  position: relative;
   width: 180px;
   height: 70px;
   display: block;
@@ -235,19 +235,18 @@ img {
 }
 
 .plaque p {
+  display: inline-block;
+  position: absolute;
+  width: inherit;
   text-align: center;
   font-family: "Helvetica", Times, serif;
   font-size: 30px;
-}
-
-.exhibit {
-  display: inline-block;
+  top: 14%;
 }
 
 div.exhibit {
   display: block;
-  margin-right: 0;
-  margin-left: 0;
+  margin: 0 auto;
 }
 
 div.exhibit div.frame {
@@ -265,6 +264,10 @@ div.plaque {
 
 div.exhibit img {
   display: inline-block;
+}
+
+#videocontent {
+
 }
 
 div.film-formats {
@@ -318,7 +321,7 @@ footer p{
 }
 /* footer */
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 850px) {
 
 body {
   color: black;;
@@ -375,22 +378,30 @@ section {
 
 div.exhibit {
   display: inline-block;
-  margin: 5%;
+  width: 40%;
+  min-width: 300px;
+  margin-right: 9.7%;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-div.exhibit div.frame {
+div.frame {
+  position: relative;
   display: inline-block;
   margin: auto;
-
+  left: 0%;
 }
 
-div.exhibit div.plaque {
-  margin-left: auto;
+.plaque {
+  display: inline-block;
+  position: relative;
+  margin: auto;
+  left: 0%;
 }
 
-
+#videocontent {
+  margin-left: 9.7%;
+}
 
 #carousel-example-generic {
   margin-left: auto;
@@ -417,17 +428,16 @@ div.footerdirectory a, a.footerstyle {
 }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1360px) {
+
+  #videocontent {
+    margin-left: 8.7%;
+  }
+
   div.exhibit {
-    margin: 4.8%;
+      width: 20%;
+      min-width: 300px;
+      margin-right: 8.7%;
   }
 
-  div.exhibit div.frame {
-    display: inline-block;
-    margin: auto;
-  }
-
-  div.exhibit div.plaque {
-    margin: auto;
-  }
 }
