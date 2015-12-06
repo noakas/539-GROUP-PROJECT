@@ -1,64 +1,78 @@
-{% extends "base.html" %}
-  {% block content %}
-    <div class = "center">
-      <section id = "center-section">
-          <h2>Video Formats</h2>
-          <p>Video recording and playback formats, including tapes and discs both analogue and digital. Some current, most long obsolete.</p>
-          <p>Dates are approximate and refer to availability in the UK or Europe where known, or elsewhere.</p>
-      </section>
+{% extends "base.html" %} {% block content %}
+<div class="center">
+  <section id="center-section">
+    <h2>Video Formats</h2>
+    <p>Video recording and playback formats, including tapes and discs both analogue and digital. Some current, most long obsolete.</p>
+    <p>Dates are approximate and refer to availability in the UK or Europe where known, or elsewhere.</p>
+  </section>
+</div>
 
-    <div class="exhibit">
-    	<div class="frame">
-        <div class="tableau">
-          	<span class="helper"></span>
-          	<img class="specimen" id="vhs" src="static/vhs.jpg" alt="VHS">
-        </div>
-    	</div>
-    	<div class="plaque"><p>U-matic</p></div>
-    </div>
-	<div class="exhibit">
-  	<div class="frame">
-    	<div class="tableau">
-        	<span class="helper"></span>
-        	<img class="specimen" id="vhs" src="static/vhs.jpg" alt="VHS">
-    	</div>
-  	</div>
-  	<div class="plaque"><p>DVcam</p></div>
-	</div>
-	<div class="exhibit">
-  	<div class="frame">
-    	<div class="tableau">
-        	<span class="helper"></span>
-        	<img class="specimen" id="vhs" src="static/vhs.jpg" alt="VHS">
-    	</div>
-  	</div>
-  	<div class="plaque"><p>Betamax</p></div>
-	</div>
+<div id="videocontent">
   <div class="exhibit">
     <div class="frame">
       <div class="tableau">
-          <span class="helper"></span>
-          <img class="specimen" id="vhs" src="static/vhs.jpg" alt="VHS">
+        <span class="helper"></span>
+        <img class="specimen" id="vhs" src="static/vhs.jpg" alt="VHS">
       </div>
     </div>
-    <div class="plaque"><p>DigiBeta</p></div>
+    <div class="plaque">
+      <p>U-matic</p>
+    </div>
   </div>
   <div class="exhibit">
     <div class="frame">
       <div class="tableau">
-          <span class="helper"></span>
-          <img class="specimen" id="vhs" src="static/vhs.jpg" alt="VHS">
+        <span class="helper"></span>
+        <img class="specimen" id="vhs" src="static/vhs.jpg" alt="VHS">
       </div>
     </div>
-    <div class="plaque"><p>CED</p></div>
+    <div class="plaque">
+      <p>DVcam</p>
+    </div>
   </div>
   <div class="exhibit">
     <div class="frame">
       <div class="tableau">
-          <span class="helper"></span>
-          <img class="specimen" id="vhs" src="static/vhs.jpg" alt="VHS">
+        <span class="helper"></span>
+        <img class="specimen" id="vhs" src="static/vhs.jpg" alt="VHS">
       </div>
     </div>
-    <div class="plaque"><p>2" Quad</p></div>
+    <div class="plaque">
+      <p>Betamax</p>
+    </div>
   </div>
-  {% endblock %}
+  <div class="exhibit">
+    <div class="frame">
+      <div class="tableau">
+        <span class="helper"></span>
+        <img class="specimen" id="vhs" src="static/vhs.jpg" alt="VHS">
+      </div>
+    </div>
+    <div class="plaque">
+      <p>DigiBeta</p>
+    </div>
+  </div>
+  <div class="exhibit">
+    <div class="frame">
+      <div class="tableau">
+        <span class="helper"></span>
+        <img class="specimen" id="vhs" src="static/vhs.jpg" alt="VHS">
+      </div>
+    </div>
+    <div class="plaque">
+      <p>CED</p>
+    </div>
+  </div>
+  <div class="exhibit">
+    <div class="frame">
+      <div class="tableau">
+        <span class="helper"></span>
+        <img class="specimen" id="vhs" src="static/vhs.jpg" alt="VHS">
+      </div>
+    </div>
+    <div class="plaque">
+      <p>2" Quad</p>
+    </div>
+  </div>
+</div>
+{% endblock %}
